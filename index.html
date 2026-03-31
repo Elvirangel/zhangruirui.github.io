@@ -1,4 +1,108 @@
-```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张蕊蕊 - 个人简历</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            border: "hsl(var(--border))",
+            input: "hsl(var(--input))",
+            ring: "hsl(var(--ring))",
+            background: "hsl(var(--background))",
+            foreground: "hsl(var(--foreground))",
+            card: {
+              DEFAULT: "hsl(var(--card))",
+              foreground: "hsl(var(--card-foreground))",
+            },
+            popover: {
+              DEFAULT: "hsl(var(--popover))",
+              foreground: "hsl(var(--popover-foreground))",
+            },
+            primary: {
+              DEFAULT: "hsl(var(--primary))",
+              foreground: "hsl(var(--primary-foreground))",
+            },
+            secondary: {
+              DEFAULT: "hsl(var(--secondary))",
+              foreground: "hsl(var(--secondary-foreground))",
+            },
+            muted: {
+              DEFAULT: "hsl(var(--muted))",
+              foreground: "hsl(var(--muted-foreground))",
+            },
+            accent: {
+              DEFAULT: "hsl(var(--accent))",
+              foreground: "hsl(var(--accent-foreground))",
+            },
+            destructive: {
+              DEFAULT: "hsl(var(--destructive))",
+              foreground: "hsl(var(--destructive-foreground))",
+            },
+          },
+          borderRadius: {
+            lg: "var(--radius)",
+            md: "calc(var(--radius) - 2px)",
+            sm: "calc(var(--radius) - 4px)",
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --primary: 221.2 83.2% 53.3%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 221.2 83.2% 53.3%;
+        --radius: 0.5rem;
+      }
+
+      .dark {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 217.2 91.2% 59.8%;
+        --primary-foreground: 222.2 47.4% 11.2%;
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 224.3 76.3% 48%;
+      }
+    }
+  </style>
+</head>
+<body>
 <div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
   <!-- Header Section -->
   <header class="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-800 dark:to-purple-800 text-white shadow-lg">
@@ -11,7 +115,7 @@
             <div class="w-36 h-36 rounded-full bg-gradient-to-br from-blue-300 via-purple-300 to-pink-300 p-1 shadow-2xl">
               <div class="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center overflow-hidden relative">
                 <!-- Placeholder: Replace the src with your photo URL -->
-                <img src=""
+                <img src="简历照片.jpg"
                      alt="张蕊蕊"
                      class="w-full h-full object-cover"
                      id="avatar-image">
@@ -39,7 +143,7 @@
         <!-- Info section -->
         <div class="flex-1 text-center md:text-left">
           <h1 class="text-4xl md:text-5xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">张蕊蕊</h1>
-          <p class="text-xl text-blue-100 dark:text-blue-200 mb-4 font-medium">LLM 应用算法工程师 | 推荐算法专家</p>
+          <p class="text-xl text-blue-100 dark:text-blue-200 mb-4 font-medium">LLM 应用算法</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a href="tel:15150532076" class="flex items-center gap-2 text-blue-50 dark:text-blue-100 hover:text-white transition-colors">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +174,7 @@
             <span class="text-muted-foreground">2019.09 - 2022.06</span>
           </div>
           <p class="text-card-foreground mb-2"><span class="font-semibold">硕士</span> · 计算机技术 · 计算机软件科学与技术</p>
-          <p class="text-muted-foreground">排名: 6/176 (4%)</p>
+          <p class="text-muted-foreground">排名: 6/176 (4%) · 研究方向：医学图像处理 · 导师：舒华忠、陈阳(教授/杰青)</p>
         </div>
         
         <div class="bg-card dark:bg-card rounded-lg shadow-md p-6 border border-border hover:shadow-lg transition-shadow">
@@ -79,8 +183,7 @@
             <span class="text-muted-foreground">2015.09 - 2019.06</span>
           </div>
           <p class="text-card-foreground mb-2"><span class="font-semibold">本科</span> · 计算机科学与技术</p>
-          <p class="text-muted-foreground mb-2">排名: 11/490 (2%)</p>
-          <p class="text-sm text-muted-foreground">影像科学与技术实验室 · 研究方向：医学图像处理 · 导师：陈阳(教授/杰青)</p>
+          <p class="text-muted-foreground mb-2">排名: 11/490 (2%) · 优秀毕业生</p>
         </div>
       </div>
     </section>
@@ -132,10 +235,11 @@
             <div class="pl-4 border-l-4 border-blue-500 dark:border-blue-400">
               <h4 class="font-bold text-card-foreground mb-2">基于动态知识图谱与 RAG 的生产级智能检索推理系统 (GraphRAG)</h4>
               <p class="text-sm text-muted-foreground mb-2">25.06 ~ 25.12</p>
-              <ul class="list-disc list-inside space-y-1 text-muted-foreground text-sm">
-                <li>主导研发具备"细粒度动态增量更新"、"知识保鲜"、"多检索模式融合"的动态 GraphRAG 架构</li>
-                <li>优化算法将图谱性能从指数级降至线性级，知识更新延迟从天级降至1分钟</li>
-                <li>落地于知识 RAG、工单答疑等核心场景，实现百万级别实体资产沉淀，复杂逻辑问答准确率提升100%</li>
+              <ul class="list-disc list-inside space-y-1 text-secondary-foreground text-sm">
+                针对传统向量 RAG 复杂关联推理不足、静态 GraphRAG 构图成本高且无法实时更新的痛点，主导研发企业级动态 GraphRAG 架构
+                <li><span class="font-semibold text-card-foreground">架构创新：</span>设计细粒度动态增量更新机制，支持“文档级-实体级”双层更新逻辑，引入“专家协同校正”闭环解决图谱冷启动噪声问题</li>
+                <li><span class="font-semibold text-card-foreground">算法优化：</span>构图性能从指数级降至线性级，知识保鲜周期从天级降至 1 分钟，检索效率提升 7 倍，检索效果提升 1 倍</li>
+                <li><span class="font-semibold text-card-foreground">业务产出：</span>落地知识 RAG、工单答疑、文档续写等场景，沉淀百万级实体资产，提升多跳逻辑问答准确率</li>
                 <li>以此方案申请技术专利 1 项</li>
               </ul>
             </div>
@@ -143,30 +247,32 @@
             <div class="pl-4 border-l-4 border-purple-500 dark:border-purple-400">
               <h4 class="font-bold text-card-foreground mb-2">多模态知识图谱构建与检索系统 (Multi-Modal GraphRAG)</h4>
               <p class="text-sm text-muted-foreground mb-2">25.09 ~ 25.12</p>
-              <ul class="list-disc list-inside space-y-1 text-muted-foreground text-sm">
-                <li>主导设计"可视化文本提取-数据分离-多模态理解-KG 融合"的四层架构</li>
-                <li>将非结构化数据知识覆盖率从 60% 提升至 90%</li>
-                <li>实现多模态数据与文本 GraphRAG 的无缝融合</li>
+              <ul class="list-disc list-inside space-y-1 text-secondary-foreground text-sm">
+              企业文档中存在大量图片、表格、公式等非结构化数据，传统文本 RAG 无法有效理解与触达，缺少多模态能力
+                <li><span class="font-semibold text-card-foreground">架构设计：</span>主导设计“感知-分离-理解-对齐”四层多模态 GraphRAG 处理架构，解决多模态信息碎片化和丢失问题</li>
+                <li><span class="font-semibold text-card-foreground">技术创新：</span>落地“视觉实体与文本节点关联机制”，利用 VLM 和多模态 Embedding 模型，实现图-文互搜等多种 RAG 模式</li>
+                <li><span class="font-semibold text-card-foreground">业务产出：</span>实现知识图谱中多模态数据与文本的端到端融合，非结构化数据知识覆盖率从 60% 提升至 90%</li>
               </ul>
             </div>
 
             <div class="pl-4 border-l-4 border-green-500 dark:border-green-400">
               <h4 class="font-bold text-card-foreground mb-2">基于 Multi-Agent 架构的业务知识 DeepSearch 系统</h4>
               <p class="text-sm text-muted-foreground mb-2">25.05 ~ 25.09</p>
-              <ul class="list-disc list-inside space-y-1 text-muted-foreground text-sm">
-                <li>自主设计并落地基于 Multi-Agent 架构的 DeepSearch 系统</li>
-                <li>创新性引入 DAG 有向无环图重构任务 Planner 模块，通过拓扑排序实现高并发调度</li>
-                <li>模糊提问、复杂多维问题的意图识别率与解决率显著提升30%</li>
+              <ul class="list-disc list-inside space-y-1 text-secondary-foreground text-sm">
+              针对传统向量/图谱 RAG 在处理模糊意图、多维复杂业务咨询时遇到召回率低、推理断层的瓶颈，构建 DeepSearch 系统。
+                <li><span class="font-semibold text-card-foreground">系统设计：</span><span class="text-card-foreground">自主设计基于 Multi-Agent 架构的 DeepSearch 系统，实现从单次 RAG 向迭代式“搜索-阅读-推理”范式转变</span></li>
+                <li><span class="font-semibold text-card-foreground">算法创新：</span>创新性引入基于 DAG (有向无环图) 的任务 Planner Agents，通过拓扑排序实现任务分解与并发调度；设计 Background Agent 机制，联动 GraphRAG 获取术语先验上下文，有效解决了业务专有名词在检索时的歧义问题；并设计批次滑动窗口 Rerank 算法及动态搜索终止机制</li>
+                <li><span class="font-semibold text-card-foreground">业务产出：</span>复杂多维问题的意图识别准确率与解决率提升 30%，解决速度提升5倍，改善用户对复杂检索问题的体验</li>
               </ul>
             </div>
 
             <div class="pl-4 border-l-4 border-pink-500 dark:border-pink-400">
               <h4 class="font-bold text-card-foreground mb-2">RAG 系统全链路自动化评测与诊断框架</h4>
               <p class="text-sm text-muted-foreground mb-2">25.09 ~ 25.11</p>
-              <ul class="list-disc list-inside space-y-1 text-muted-foreground text-sm">
-                <li>主导利用 LLM 构建基于文档图的高质量 QA 自动化生成与校验引擎</li>
-                <li>落地涵盖"文档预处理 → 文档图构建 → QA 对产出 → LLM-as-Judge"的闭环全链路自动化评测能力</li>
-                <li>推动研发模式从"人工标注"向"数据驱动"转型，节省全部人工标注成本</li>
+              <ul class="list-disc list-inside space-y-1 text-secondary-foreground text-sm">
+                针对企业内部知识库 RAG 系统面临高质量测试集获取难、人工标注成本高且标准不统一的痛点，构建一站式评测框架。
+                <li><span class="font-semibold text-card-foreground">自动化测试集构建：</span>首创基于“文档图构建 -> 角色生成 -> QA 生成 -> LLM-as-Judge”的自动化引擎，相比传统方案，生成的 QA 对更具逻辑深度（支持跨段落、跨文档查询）</li>
+                <li><span class="font-semibold text-card-foreground">业务产出：</span>推动RAG评测模式从“人工标注”向“数据驱动”转变，可节省全部人工标注成本，不仅高效指导了内部系统的迭代，还吸引了内部团队主动接入合作。（以此方案申请技术专利 1 项）</li>
                 <li>以此方案申请技术专利 1 项</li>
               </ul>
             </div>
@@ -176,18 +282,17 @@
         <!-- Project 2 -->
         <article class="bg-card dark:bg-card rounded-lg shadow-md p-6 border border-border hover:shadow-lg transition-shadow">
           <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
-            <h3 class="text-2xl font-bold text-card-foreground">AI Delivery 智能交付项目 - Agent Memory System</h3>
+            <h3 class="text-2xl font-bold text-card-foreground">Agent Memory记忆引擎 - 支付宝AI Delivery智能交付项目</h3>
             <span class="text-muted-foreground whitespace-nowrap">2026.01 ~ 至今</span>
           </div>
           <p class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-3">LLM 应用算法工程师</p>
-          <p class="text-muted-foreground mb-4">AI Delivery 是 AI Coding 在支付宝后端工程研发领域落地的实践，目标是提供支付宝生产级需求到交付的 AI Coding 一体化解决方案。</p>
-          
-          <ul class="list-disc list-inside space-y-2 text-muted-foreground text-sm">
-            <li><span class="font-semibold text-card-foreground">全链路无感采集与多层次记忆：</span>设计基于事件驱动 + 异步管道的全链路架构，通过生命周期 Hook 零侵入采集全量开发行为，全链路不阻塞 AI 响应</li>
-            <li><span class="font-semibold text-card-foreground">记忆多维理解与内容分层：</span>构建 LLM 记忆引擎，将离散的对话行为解析为高密度结构化记忆，自动标注开发阶段、记忆层级、作用域等多维分类</li>
-            <li><span class="font-semibold text-card-foreground">智能召回与动态价值反馈：</span>基于语义搜索 + 结构化多维过滤的混合检索策略，新会话启动时自动召回相关历史记忆注入上下文</li>
-            <li><span class="font-semibold text-card-foreground">记忆评估与晋升：</span>建立后台链式触发的静默分析评估流水线，高价值记忆自动晋升为团队可共享的知识文件</li>
-            <li><span class="font-semibold text-card-foreground">可视化管理与团队赋能：</span>构建三视图 Web 管理平台，支持记忆全生命周期的可视化管理与团队知识导出</li>
+          <p class="text-secondary-foreground mb-4">针对 AI Coding 助手（基于 ClaudeCode）因 LLM 无状态推理导致的跨会话记忆断层及研发隐性知识碎片化痛点，独立从 0 到 1 设计并落地了「采集-理解-评估-检索-晋升」的完整记忆闭环，打通从海量对话到团队高价值知识的沉淀路径，赋予 AI 助手可持续积累与跨会话复用的持久化记忆能力。</p>
+          <ul class="list-disc list-inside space-y-2 text-secondary-foreground text-sm">  
+            <li><span class="font-semibold text-card-foreground">全链路无感采集与多层次记忆：</span>基于事件驱动 + 异步管道的全链路架构，通过生命周期 Hook 零侵入采集全量开发行为，全链路不阻塞 AI 响应，异步队列解耦各阶段处理，本地化部署、零外部依赖</li>
+            <li><span class="font-semibold text-card-foreground">记忆多维理解与内容分层：</span>LLM 记忆引擎构建多维度记忆引擎为将离散对话解析为“动作-会话-全局”三层结构；自动萃取可复用的开发策略、技能与事实知识，层级、作用域等多维分类</li>
+            <li><span class="font-semibold text-card-foreground">智能召回与动态价值反馈：</span>基于语义搜索 + 结构化多维过滤的混合检索策略，历史记忆注入上下文、根据Skills自动判断检索时机，同时暴露专属工具支持开发者主动搜索溯源；记忆使用量化统计，将静态评分与真实使用频次结合，形成越用越准的自增强价值闭环</li>
+            <li><span class="font-semibold text-card-foreground">记忆评估与晋升：</span>建立后台链式触发的静默分析评估流水线，实现从100%原始对话到~15%团队高价值知识压缩，高价值记忆自动晋升为团队可共享的知识，解决研发过程中的“决策遗忘”、知识共享问题</li>
+            <li><span class="font-semibold text-card-foreground">可视化管理：</span>通过web管理平台，支持记忆全生命周期的可视化管理，支持知识编辑与导出</li>
           </ul>
         </article>
 
@@ -198,9 +303,9 @@
             <span class="text-muted-foreground whitespace-nowrap">2024.03 ~ 2025.03</span>
           </div>
           <p class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-3">推荐算法工程师</p>
-          <p class="text-muted-foreground mb-4">蓝花火是支付宝的创新业务，面向年轻用户提供多类型票务、内容社交、兴趣小组等服务。作为团队首位推荐算法工程师，负责从 0 到 1 搭建商品推荐全链路。</p>
+          <p class="text-secondary-foreground mb-4">蓝花火是支付宝的创新业务，面向年轻用户提供多类型票务、内容社交、兴趣小组等服务。作为团队首位推荐算法工程师，负责从 0 到 1 搭建商品推荐全链路。</p>
           
-          <ul class="list-disc list-inside space-y-2 text-muted-foreground text-sm">
+          <ul class="list-disc list-inside space-y-2 text-secondary-foreground text-sm">
             <li><span class="font-semibold text-card-foreground">从 0 到 1 全链路架构搭建：</span>独立完成算法侧商品推荐系统"冷启-召回-精排-重排"全流程核心链路建设</li>
             <li><span class="font-semibold text-card-foreground">在线学习与召回策略落地：</span>独立攻坚并落地在线学习(Online Learning)机制，实现对新商品及用户实时行为的分钟级动态感知</li>
             <li><span class="font-semibold text-card-foreground">算法基础设施构建：</span>从底层打通离线/实时（Flink）数据计算流，完成特征工程构建、模型训练部署、A/B Test 实验平台对接</li>
@@ -216,9 +321,9 @@
             <span class="text-muted-foreground whitespace-nowrap">2022.08 ~ 2023.12</span>
           </div>
           <p class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-3">CDO 平台一号位</p>
-          <p class="text-muted-foreground mb-4">CDO 是蚂蚁全站内使用的业务风险监控平台，MAU 高达 6000+。通过实时流计算和智能算法实现异常日志分析、风险预警和异常变更阻断。</p>
+          <p class="text-secondary-foreground mb-4">CDO 是蚂蚁全站内使用的业务风险监控平台，MAU 高达 6000+。通过实时流计算和智能算法实现异常日志分析、风险预警和异常变更阻断。</p>
           
-          <ul class="list-disc list-inside space-y-2 text-muted-foreground text-sm">
+          <ul class="list-disc list-inside space-y-2 text-secondary-foreground text-sm">
             <li><span class="font-semibold text-card-foreground">实时风险监控与精细化变更防御：</span>基于 Blink 引擎构建全站 SLS 实时日志多级处理链路，支撑全站分钟级的风险预警</li>
             <li><span class="font-semibold text-card-foreground">智能降噪算法体系：</span>上线多种告警降噪能力，如朴素贝叶斯+概率统计的日志模板降噪算法、Exception 降噪、根因降噪等</li>
             <li><span class="font-semibold text-card-foreground">实时任务稳定性保障：</span>针对流量热点和数据倾斜问题进行 Blink 计算优化，保障双十一等大规模高压计算任务稳定性</li>
@@ -232,10 +337,10 @@
             <h3 class="text-2xl font-bold text-card-foreground">星图平台 - 业务场景智能推导与质量度量</h3>
             <span class="text-muted-foreground whitespace-nowrap">2023.03 ~ 2023.12</span>
           </div>
-          <p class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-3">星图平台数据算法一号位</p>
-          <p class="text-muted-foreground mb-4">星图是基于流量数据进行业务场景智能推导的质量平台，目标是评估业务质量活动的充分度，支撑全链路质量度量。</p>
+          <p class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-3">星图平台数据算法工程师</p>
+          <p class="text-secondary-foreground mb-4">星图是基于流量数据进行业务场景智能推导的质量平台，目标是评估业务质量活动的充分度，支撑全链路质量度量。</p>
           
-          <ul class="list-disc list-inside space-y-2 text-muted-foreground text-sm">
+          <ul class="list-disc list-inside space-y-2 text-secondary-foreground text-sm">
             <li><span class="font-semibold text-card-foreground">全站数据建模与计算调优：</span>构建完整的业务场景推导建模流程，实现支付宝全站流量处理与场景推导的 T+1 产出</li>
             <li><span class="font-semibold text-card-foreground">流量特征分类：</span>设计 LightGBM 树模型结合用户打标数据，核心特征识别精准率和召回率双双达到 95%+</li>
             <li><span class="font-semibold text-card-foreground">LLM 赋能分类与语义理解：</span>利用 SFT 训练 LLM 执行复杂特征分类任务（召回率 86%）</li>
@@ -254,8 +359,9 @@
             <h3 class="text-xl font-bold text-card-foreground">蚂蚁集团支付宝技术部</h3>
             <span class="text-muted-foreground">2021.06 - 2021.10</span>
           </div>
-          <p class="text-blue-600 dark:text-blue-400 font-semibold mb-2">数据研发工程师</p>
-          <p class="text-muted-foreground text-sm">利用 Blink 技术做实时大数据处理、根据工程应用场景进行不同类型的数据清洗和数据合流、用 Java 写 UDF 辅助 SQL 实现高级功能、部分相关的后端功能实现，实现一套完整的日志分析、监控、风险预警能力。<span class="font-semibold text-green-600 dark:text-green-400">获得 A+ 实习评估</span>。</p>
+          <p class="text-blue-600 dark:text-blue-400 font-semibold  mb-4">数据研发工程师</p>
+          <p class="text-muted-foreground text-sm">利用 Blink 技术做实时大数据处理、根据工程应用场景进行不同类型的数据清洗和数据合流、用 Java 写 UDF 辅助 SQL 实现高级功能、部分相关的后端功能实现，实现一套完整的日志分析、监控、风险预警能力。
+          <span class="font-semibold text-green-600 dark:text-green-400  mb-2">获得 A+ 实习评估</span>。</p>
         </div>
 
         <div class="bg-card dark:bg-card rounded-lg shadow-md p-6 border border-border hover:shadow-lg transition-shadow">
@@ -285,7 +391,7 @@
             <h3 class="text-xl font-bold text-card-foreground">江苏省省级大学生创业创新项目</h3>
             <span class="text-muted-foreground">2018.03 - 2019.03</span>
           </div>
-          <p class="text-blue-600 dark:text-blue-400 font-semibold mb-2">项目负责人 · "资源受限软件调度模型与优化"</p>
+          <p class="text-gray-900 dark:text-gray-400 font-semibold mb-4">项目负责人 · "资源受限软件调度模型与优化"</p>
           <p class="text-muted-foreground text-sm">在各种受限的开发资源中，针对开发过程中如何将资源合理地分配到任务中的问题，去优化任务调度模型和算法，将传统调度算法与人工智能算法结合，对资源的分配进行合理地研究与改进。</p>
         </div>
       </div>
@@ -293,7 +399,7 @@
 
     <!-- Publications Section -->
     <section class="mb-12">
-      <h2 class="text-3xl font-bold text-foreground mb-6 pb-2 border-b-2 border-indigo-500 dark:border-indigo-400">学术成果</h2>
+      <h2 class="text-3xl font-bold text-foreground mb-6 pb-2 border-b-2 border-indigo-500 dark:border-indigo-400">学术论文与专利</h2>
       <div class="bg-card dark:bg-card rounded-lg shadow-md p-6 border border-border">
         <div class="mb-6">
           <h3 class="text-xl font-bold text-card-foreground mb-3 flex items-center gap-2">
@@ -302,7 +408,13 @@
             </svg>
             论文
           </h3>
-          <p class="text-muted-foreground pl-8">2026 CVPR · ReFAct: Empowering Multimodal Web Agents with Visual and Context Focusing</p>
+          <div class="pl-8">
+            <div class="flex items-start justify-between gap-3">
+              <p class="text-card-foreground font-semibold">ReFAct: Empowering Multimodal Web Agents with Visual and Context Focusing</p>
+              <span class="flex-shrink-0 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 px-3 py-1 rounded-full text-xs font-semibold">2026 CVPR</span>
+            </div>
+            <p class="text-sm text-muted-foreground mt-1">针对多模态 Web Agent 在复杂网页环境中的视觉聚焦与上下文理解问题，提出 ReFAct 框架</p>
+          </div>
         </div>
 
         <div>
@@ -382,6 +494,48 @@
               <p class="text-sm text-muted-foreground">2018 · 第二名</p>
             </div>
           </div>
+          <div class="flex items-start gap-3 p-3 bg-muted dark:bg-muted rounded-lg">
+            <span class="text-2xl">📚</span>
+            <div>
+              <p class="font-semibold text-card-foreground">东南大学学术英语竞赛三等奖</p>
+              <p class="text-sm text-muted-foreground">2020</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-3 bg-muted dark:bg-muted rounded-lg">
+            <span class="text-2xl">💰</span>
+            <div>
+              <p class="font-semibold text-card-foreground">东南大学研究生学业二等奖学金</p>
+              <p class="text-sm text-muted-foreground">2019 · ×2年</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-3 bg-muted dark:bg-muted rounded-lg">
+            <span class="text-2xl">💰</span>
+            <div>
+              <p class="font-semibold text-card-foreground">中国矿业大学奖学金</p>
+              <p class="text-sm text-muted-foreground">2016-2018 · ×3年</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-3 bg-muted dark:bg-muted rounded-lg">
+            <span class="text-2xl">🥈</span>
+            <div>
+              <p class="font-semibold text-card-foreground">中国矿业大学《概率论与数理统计》竞赛二等奖</p>
+              <p class="text-sm text-muted-foreground">2017</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-3 bg-muted dark:bg-muted rounded-lg">
+            <span class="text-2xl">💻</span>
+            <div>
+              <p class="font-semibold text-card-foreground">中国矿业大学 ACM 程序设计竞赛三等奖</p>
+              <p class="text-sm text-muted-foreground">2017</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-3 bg-muted dark:bg-muted rounded-lg">
+            <span class="text-2xl">🏅</span>
+            <div>
+              <p class="font-semibold text-card-foreground">中国矿业大学《线性代数》竞赛三等奖</p>
+              <p class="text-sm text-muted-foreground">2016</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -394,69 +548,5 @@
     </div>
   </footer>
 </div>
-```
----
-
-## 使用说明
-
-这是一个现代化、响应式的个人简历网页，具有以下特点:
-
-### ✨ 设计特色
-- **渐变配色**：使用蓝紫渐变主题，专业且富有科技感
-- **响应式布局**：完美适配桌面、平板和手机
-- **深色模式支持**：自动适配系统深色模式
-- **精美头像**：带渐变边框和认证徽章的圆形头像
-- **卡片式设计**：清晰的信息层次，易于阅读
-- **悬停效果**：卡片和链接悬停时有动画效果
-
-### 🎨 视觉亮点
-- 彩色分隔线区分不同章节
-- 项目经历使用不同颜色的左边框标识子项目
-- 奖项使用 emoji 图标增加视觉趣味
-- 技能部分使用彩色圆点装饰
-- 联系方式可点击（电话和邮箱）
-
-### 📸 如何替换头像
-
-**方法一：使用在线图片**
-1. 将照片上传到图床（如 Imgur、ImgBB）
-2. 复制图片 URL
-3. 在代码中找到这一行：
-```html
-<img src="https://images.unsplash.com/photo-..."
-     alt="张蕊蕊"
-     class="w-full h-full object-cover"
-     id="avatar-image">
-```
-4. 将 `src` 属性替换为你的照片 URL
-
-**方法二：使用 GitHub 仓库中的照片**
-1. 在仓库中创建 `images` 文件夹
-2. 上传照片（如 `avatar.jpg`）
-3. 将 `src` 改为：`./images/avatar.jpg`
-
-**照片建议**：
-- 正方形照片（1:1 比例）
-- 推荐尺寸：400x400 像素以上
-- 格式：JPG 或 PNG
-- 背景：纯色或简洁背景
-
-### 📱 技术特性
-- 使用 Tailwind CSS 实现所有样式
-- 语义化 HTML 标签
-- 无需外部依赖，可直接在 GitHub Pages 使用
-- 优秀的可访问性
-- 头像悬停显示替换提示
-
-### 🚀 部署到 GitHub
-1. 将 HTML 代码保存为 `index.html`
-2. （可选）上传你的照片到 `images` 文件夹
-3. 上传到你的 GitHub 仓库
-4. 在仓库设置中启用 GitHub Pages
-5. 访问 `https://你的用户名.github.io/仓库名/` 即可查看
-
-### 💡 个性化建议
-- 替换头像为真实照片
-- 修改渐变配色（from-blue-600 to-purple-600）
-- 添加社交媒体链接（GitHub、LinkedIn 等）
-- 调整章节顺序以突出重点
+</body>
+</html>
